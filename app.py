@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 conn_str = (
     r'DRIVER={ODBC Driver 17 for SQL Server};'
-    r'SERVER=192.169.0.113,1433;'
+    r'SERVER=192.169.0.113,1433;' #no debe ser  localhost, debe ser la ip de la maquina
     r'DATABASE=master;'
-    r'UID=sa;'requirements.txt
+    r'UID=sa;'
     r'PWD=Caracas01-;'
 )
 conn = pyodbc.connect(conn_str)
